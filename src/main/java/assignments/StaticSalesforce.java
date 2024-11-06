@@ -32,7 +32,8 @@ public class StaticSalesforce {
 		moveto.click();
 		driver.findElement(By.className("forceActionLink")).click();
 		driver.findElement(By.xpath("//input[@name=\"CompanyName\"]")).sendKeys("TestLeaf");
-		driver.findElement(By.xpath("(//textarea[@class='slds-textarea'])[2]")).sendKeys("Salesforces");
+		WebElement sk = driver.findElement(By.xpath("(//textarea[@class='slds-textarea'])[2]"));
+		sk.sendKeys("Salesforces");
 		driver.findElement(By.xpath("(//div[contains(@class,'slds-form-element__control')])[11]")).click();
 
 		
