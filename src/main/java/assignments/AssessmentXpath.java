@@ -28,6 +28,7 @@ public class AssessmentXpath {
 		executor.executeScript("arguments[0].click();", cart);
 		Thread.sleep(3000);
 		String subtotal = driver.findElement(By.xpath("//span[@class='cart-subtotal__price']")).getText();
+		System.out.println(subtotal);
 		System.out.println("The Subtotal of the product is :  "+subtotal);
 		Thread.sleep(3000);
 		driver.quit();
